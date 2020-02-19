@@ -1,0 +1,82 @@
+*{
+	
+	box-sizing: border-box;
+	font-family: "Andale Mono", AndaleMono, monospace;
+
+}
+
+body{
+	font-size: 18px;
+	line-height: 22px;
+}
+img{
+	width: 18px;
+}
+@keyframes cambio{
+	from{
+		background-color:white;
+		color: red;  
+	}
+	to{
+		background-color:red;
+		color: white;
+	}
+}
+@keyframes movi{
+	from{
+		transform: rotate(45deg);
+	}
+	to{
+		transform: rotate(-45deg);
+	}
+}
+.resumen{
+	width:800px;
+	display: flex;
+	margin: 10px auto;
+	
+}
+
+.resumen .izquierda{
+	width: 70%;
+	border-left: 4px solid #111;
+	border-top: 4px solid #111;
+	border-bottom: 4px solid #111;
+	color:#FFFFFF;
+	background-color: #003F91; 
+
+	 
+}
+.perfil{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+
+
+.resumen .derecha{
+	width: 2000px;
+	border-right: 4px solid #FFF;
+	background: #111;
+	color: #FFF;
+
+}
+.resumen .derecha .cont{
+	margin: 10px;
+
+}
+
+.anima{
+	animation-name: cambio;
+	animation-duration: 3s;
+	animation-iteration-count: infinite; 
+	animation-direction: alternate;
+}
+  
+img{	
+	animation:movi 0.4s infinite;
+	animation-direction: alternate; 
+
+}
+
